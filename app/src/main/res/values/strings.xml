@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ExpenseManager</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="save">Save</string>
+    <string name="amount">Amount</string>
+    <string name="notes">Notes</string>
+    <string name="title">Title</string>
+</resources>

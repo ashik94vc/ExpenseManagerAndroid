@@ -68,7 +68,7 @@ public class ListAdapter extends BaseAdapter {
         String money = "\u20b9"+expenses.get(position).getMoneySpent();
         viewHolder.moneySpent.setText(money);
         Date date = new Date(expenses.get(position).getTimeStamp());
-        SimpleDateFormat sdf = new SimpleDateFormat("M/d/yy h:mm a");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YY h:mm a");
         TimeZone istTimeZone = TimeZone.getTimeZone("Asia/Kolkata");
         sdf.setTimeZone(istTimeZone);
         String strtime = sdf.format(date);

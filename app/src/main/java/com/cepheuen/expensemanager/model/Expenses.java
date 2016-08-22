@@ -1,9 +1,11 @@
 package com.cepheuen.expensemanager.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Ashik Vetrivelu on 20/08/16.
  */
-public class Expenses {
+public class Expenses implements Serializable{
 
     private float moneySpent;
     private String title;

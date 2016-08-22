@@ -33,6 +33,8 @@
     </RelativeLayout>
     <ListView
         android:id="@+id/list_log"
+        android:layout_marginTop="16dp"
+        android:divider="@null"
         android:layout_below="@id/charts_holder"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
@@ -95,7 +97,7 @@
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="@string/amount"
+                android:hint="@string/title"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="8dp">
                 <EditText
@@ -130,6 +132,12 @@
                     android:ems="10"
                     android:layout_height="wrap_content" />
             </android.support.design.widget.TextInputLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datePicker"
+                android:text="Choose Date"
+                android:layout_marginEnd="58dp" />
             <Button
                 android:id="@+id/save_btn"
                 android:layout_width="wrap_content"

@@ -17,7 +17,10 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.Header;
+import retrofit2.http.Headers;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 
 /**
  * Created by Ashik Vetrivelu on 22/08/16.
@@ -56,6 +59,14 @@ public class ExpenseAPI {
 
         @GET("/")
         Call<List<Expenses>> getAllExpenses();
+
+        @Headers("Content-Type:application/json")
+        @POST("/updateExpense")
+        Call<List<Expenses>> updateExpense(@Body Expenses expense);
+
+        @GET("/deleteExpense/{timestamp}")
+        Call<List<Expenses>> deleteExpense(@Path("timestamp") long timeStamp);
+
     }
 }
 

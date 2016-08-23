@@ -5,4 +5,6 @@
     <string name="amount">Amount</string>
     <string name="notes">Notes</string>
     <string name="title">Title</string>
+    <string name="menu_edit">Update</string>
+    <string name="menu_delete">Delete</string>
 </resources>
